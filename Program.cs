@@ -67,7 +67,7 @@ namespace AddressBook
                     Console.WriteLine($"Email: {contact.Email}");
                     Console.WriteLine($"Address: {contact.Address}");
                 }
-                catch (InvalidOperationException ex)
+                catch (KeyNotFoundException)
                 {
                     Console.WriteLine("----------------------------");
                     Console.WriteLine("Contact not found");
